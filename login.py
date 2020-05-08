@@ -67,28 +67,8 @@ def interface():#main page after login
     elif cf == "weather" or cf == "Weather":
         weather()
     elif cf == "hack" or cf == "Hack":
-        if login == "mimmo":
             os.system("clear")
             hacker_mode()
-        else:#if anyone else trys to use hacker mode it does the following
-            os.system("clear")
-            print("""
-    ▓█████▄ ▓█████ ▄▄▄      ▓█████▄     ███▄ ▄███▓ ▄▄▄       ███▄    █ 
-    ▒██▀ ██▌▓█   ▀▒████▄    ▒██▀ ██▌   ▓██▒▀█▀ ██▒▒████▄     ██ ▀█   █ 
-    ░██   █▌▒███  ▒██  ▀█▄  ░██   █▌   ▓██    ▓██░▒██  ▀█▄  ▓██  ▀█ ██▒
-    ░▓█▄   ▌▒▓█  ▄░██▄▄▄▄██ ░▓█▄   ▌   ▒██    ▒██ ░██▄▄▄▄██ ▓██▒  ▐▌██▒
-    ░▒████▓ ░▒████▒▓█   ▓██▒░▒████▓    ▒██▒   ░██▒ ▓█   ▓██▒▒██░   ▓██░
-     ▒▒▓  ▒ ░░ ▒░ ░▒▒   ▓▒█░ ▒▒▓  ▒    ░ ▒░   ░  ░ ▒▒   ▓▒█░░ ▒░   ▒ ▒ 
-     ░ ▒  ▒  ░ ░  ░ ▒   ▒▒ ░ ░ ▒  ▒    ░  ░      ░  ▒   ▒▒ ░░ ░░   ░ ▒░
-     ░ ░  ░    ░    ░   ▒    ░ ░  ░    ░      ░     ░   ▒      ░   ░ ░ 
-       ░       ░  ░     ░  ░   ░              ░         ░  ░         ░ 
-     ░                       ░                                         
-            """)
-            print(Fore.RED + "\npermission denied\ndont try it again\n")
-            time.sleep(1)
-            webbrowser.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
-            print(Style.RESET_ALL)
-            sys.exit()
     elif cf == "quit" or cf == "Quit":
         sys.exit()
     elif cf == "crypt" or cf == "Crypt":
@@ -283,7 +263,6 @@ def hacker_mode():
     """)
     print("||=================================================||")
     print("|| raven = runs ravenstorm program                 ||")
-    print("|| eggshell = run backdoor                         ||")
     print("|| msf = msfconsole                                ||")
     print("|| ssh = connect to server using secure shell      ||")
     print("|| back = go back                                  ||")
@@ -301,17 +280,6 @@ def hacker_mode():
         """)
         time.sleep(1)
         os.system("./Raven-Storm")
-    elif hm == "eggshell" or hm == "Eggshell":
-        print("""
-    ███████╗░██████╗░░██████╗░░██████╗██╗░░██╗███████╗██╗░░░░░██╗░░░░░
-    ██╔════╝██╔════╝░██╔════╝░██╔════╝██║░░██║██╔════╝██║░░░░░██║░░░░░
-    █████╗░░██║░░██╗░██║░░██╗░╚█████╗░███████║█████╗░░██║░░░░░██║░░░░░
-    ██╔══╝░░██║░░╚██╗██║░░╚██╗░╚═══██╗██╔══██║██╔══╝░░██║░░░░░██║░░░░░
-    ███████╗╚██████╔╝╚██████╔╝██████╔╝██║░░██║███████╗███████╗███████╗
-    ╚══════╝░╚═════╝░░╚═════╝░╚═════╝░╚═╝░░╚═╝╚══════╝╚══════╝╚══════╝
-        """)
-        time.sleep(1)
-        os.system("python eggshell.py")
     elif hm == "msf" or hm == "Msf" or hm == "MSF" or hm =="msfconsole" or hm =="Msfconsole" or hm =="MSFconsole":
         os.system("msfconsole")
     elif hm == "ssh" or hm == "SSH":
