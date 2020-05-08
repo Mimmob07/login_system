@@ -6,3 +6,5 @@ simple login system using python
 > pip install -r requirements
 # run the code
 `python3 login.py`
+# Disclaimer
+I not own raven storm, the chat server or the weather program but the API bieng used
